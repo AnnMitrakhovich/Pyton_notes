@@ -1,9 +1,7 @@
 import datetime
-
-from Controller import Controller
-from ConverterToJSON import ConverterToJSON
-from Note import Note
-from View import View
+from tkinter import *
+from tkinter import messagebox
+from tkinter import filedialog
 
 def run():
     c = Controller(ConverterToJSON("notes.json"), View())

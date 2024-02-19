@@ -1,4 +1,4 @@
-class Note:
+class Note(object):
     def __init__(self, note_id, date, title, text):
         self._note_id = note_id
         self._date = date

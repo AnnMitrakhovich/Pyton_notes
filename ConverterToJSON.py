@@ -1,11 +1,11 @@
 import json
 
-import view
-from note import Note
+import View
+from Note import Note
 
 
 
-class ConverterToJSON:
+class ConverterToJSON(object):
 
     def __init__(self, file_name):
         self.file_name = file_name
