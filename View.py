@@ -1,4 +1,6 @@
 class View:
+    def greeting(self):
+        print("Вас приветствует приложение для управления личными заметками!")
     @staticmethod
     def show_number_point_list(notes):
         for note in notes:

@@ -75,5 +75,6 @@ class Model_JSON(object):
                 notes_list.append(Note(item['id'], item['date'], item['title'], item['text']))
 
             return notes_list
-        except ValueError:
+        except ValueError or FileNotFoundError:
+            my_file = open("notes.json", "w+")
             return self.notes
