@@ -3,9 +3,9 @@ from note import Note
 
 class Model_JSON(object):
 
-    def __init__(self, data, filename):
-        self.data = data
+    def __init__(self, filename):
         self.filename = filename
+        self.notes = list()
         
     def create_note(self, note):
         self.notes = self.read_notes()

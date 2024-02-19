@@ -4,23 +4,38 @@ class Note:
         self.date = date
         self.title = title
         self.text = text
-    def get_note_id(self):
-        return self.note_id
-    def set_note_id(self, id):
-        self.note_id = id
-    def get_date(self):
-        return self.date
-    def set_date(self, d):
-        self.date = d
-    def get_title(self):
-        return self.title
-    def set_title(self, t):
-        self.title = t
-    def get_text(self):
-        return self.text
-    def set_text(self, tt):
-        self.text = tt
+    @property
+    def title(self):
+        return self._title
+
+    @title.setter
+    def title(self, title):
+        self._title = title
+
+    @property
+    def text(self):
+        return self._text
+
+    @text.setter
+    def text(self, text):
+        self._text = text
+
+    @property
+    def note_id(self):
+        return self._note_id
+
+    @note_id.setter
+    def note_id(self, note_id):
+        self._note_id = note_id
+
+    @property
+    def date(self):
+        return self._date
+
+    @date.setter
+    def date(self, date):
+        self._date = date
+
     def __str__(self):
-        return f'\nЗаметка: {self.note_id}\nДата создания(редактирования):' \
-               f' {self.date}\nЗаголовок: {self.title}\nСодержание: {self.text}\n '
-    
+        return f'\nЗаметка: {self._note_id}\nДата создания(редактирования):' \
+               f' {self._date}\nЗаголовок: {self._title}\nТело: {self._text}\n '
