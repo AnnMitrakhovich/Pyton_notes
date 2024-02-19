@@ -1,4 +1,4 @@
-class View(object):
+class View:
     @staticmethod
     def show_number_point_list(notes):
         for note in notes:

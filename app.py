@@ -1,10 +1,11 @@
 import datetime
-from tkinter import *
-from tkinter import messagebox
-from tkinter import filedialog
+from controller import Controller
+from view import View
+from model_JSON import Model_JSON
+from note import Note
 
 def run():
-    c = Controller(ConverterToJSON("notes.json"), View())
+    c = Controller(Model_JSON("notes.json"), View())
 
     while True:
         command = input('1 - создать заметку\n'

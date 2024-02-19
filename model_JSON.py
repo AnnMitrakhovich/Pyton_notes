@@ -1,16 +1,12 @@
 import json
+from note import Note
 
-import View
-from Note import Note
+class Model_JSON(object):
 
-
-
-class ConverterToJSON(object):
-
-    def __init__(self, file_name):
-        self.file_name = file_name
-        self.notes = list()
-
+    def __init__(self, data, filename):
+        self.data = data
+        self.filename = filename
+        
     def create_note(self, note):
         self.notes = self.read_notes()
         max_id = 0
