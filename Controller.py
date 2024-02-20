@@ -32,7 +32,7 @@ class Controller(object):
 
     def delete_all_notes(self):
         self.model.delete_all_notes()
-        self.view.display_all_notes_deletion()
+        self.view.display_all_notes_delete()
 
     def notes_exist(self):
         notes = self.model.read_notes()

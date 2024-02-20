@@ -1,5 +1,6 @@
 import json
 from note import Note
+from view import View
 
 class Model_JSON(object):
 

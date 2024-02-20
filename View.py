@@ -1,13 +1,11 @@
 class View:
-    def greeting(self):
-        print("Вас приветствует приложение для управления личными заметками!")
+    
     @staticmethod
     def show_number_point_list(notes):
         for note in notes:
-            print("*****")
+            print("* * * * *")
             print(note)
-            print("*****")
-    
+
     @staticmethod
     def show_note(note):
         print(note)
@@ -34,13 +32,13 @@ class View:
 
     @staticmethod
     def display_note_deletion(note_id):
-        print('*****')
+        print('* * * * *')
         print('Удаление заметки с номером: {} выполнено успешно!'.format(note_id))
 
     @staticmethod
     def display_all_notes_delete():
         print('Все заметки удалены!')
-        print('*****')
+        print('* * * * *')
 
     def display_note_id_not_exist(search_id):
         return search_id

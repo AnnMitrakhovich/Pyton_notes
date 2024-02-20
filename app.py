@@ -5,9 +5,11 @@ from model_JSON import Model_JSON
 from note import Note
 
 def run():
+    print('Вас приветствует приложение для управления личными заметками!')
     c = Controller(Model_JSON("notes.json"), View())
 
     while True:
+        
         command = input('1 - создать заметку\n'
                         '2 - прочитать заметку\n'
                         '3 - обновить заметку\n'
